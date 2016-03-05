@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Happy Beaver Game!</title>
+
+<style>
+	#mycanvas{
+		margin-left: 35%;
+	}
+	.canvas:focus {
+		outline: none !important;
+		border:1px solid red;
+		float: right;
+	}
+	.heading {
+		text-align: center;
+	}
+	#main-heading {
+		font-family: sans-serif;
+		background-color: #A6FBFF;
+		padding: 0.5em;
+		margin: 1em;
+	}
+	#agradecimento {
+		float:left;
+		width: 30%;
+		margin-left: 10px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="heading" id="main-heading">
+		<h1>Welcome to my first game!</h1>
+	</div>
+
+	<script src="processing.js"></script>
+	<script type="text/processing" data-processing-target="mycanvas" src="game.js">
+	</script>
+
+	<div id="container">
+	<h3 class="adradecimento">
+		Agradecimentos:
+	</h3>
+	<p class="agradecimento">Gostaria de agradecer primeiramente a <strong>Deus</strong>, o qual nunca me desamparou (Ele e tudo que <em>voce</em> precisa!). Agradeco tambem a minha familia, que sempre acreditou em mim. Em especial agradeco ao meu pai, por ter passado tanto tempo me ensinando e me ajudar a debugar alguns erros, sem ele nao teria conseguido. Agradeco a minha amada namorada, Julyana, a qual me incentivou e me cativou a aprender cada vez mais. Por ultimo, obrigado a voce que visita essa pagina. Espero que se divirta! E <span color:red>cuidado</span> com os monstros!</p>
+	<canvas id="mycanvas"></canvas>
+	</div>
+</body>
+</html>
